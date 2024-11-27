@@ -9,6 +9,6 @@ Usage:
 ```bash
 uv venv test-venv
 . test-venv/bin/activate
-uv pip install venvasion
+uv pip install --no-build venvasion
 . test-venv/bin/activate # oops!
 ```
