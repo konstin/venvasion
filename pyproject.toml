@@ -1,6 +1,6 @@
 [project]
 name = "venvasion"
-version = "0.1.0"
+version = "0.1.1"
 description = "Arbitrary code execution when activating a virtual environment after install a wheel"
 readme = "README.md"
 authors = [
@@ -9,10 +9,10 @@ authors = [
 requires-python = ">=3.9.0"
 
 [tool.pdm.build]
-source-includes = ["data/**"]
+source-includes = ["data/**/*"]
 
 [tool.pdm.build.wheel-data]
-data = [{ path = "data/**", relative-to = "data" }]
+data = [{ path = "data/**/*", relative-to = "data" }]
 
 [build-system]
 requires = ["pdm-backend"]

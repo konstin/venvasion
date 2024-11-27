@@ -1,6 +1,6 @@
 #!/bin/bash
 
-uv venv test-venv
+uv venv -p 3.12 test-venv
 . test-venv/bin/activate
-uv pip install .
+uv pip install -p 3.12 .
 . test-venv/bin/activate
